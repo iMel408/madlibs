@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Yay!</title>
+</head>
+<body>
+
+    Hi {{ person }}! Pick a color. <br>
+
+<form action="/madlib" method="GET">
+    <input type="radio" name="color" id="blue" value="blue"> Blue </input><br>
+    <input type="radio" name="color" id="red" value="red"> Red </input><br> <br>
+    
+
+  Who's your favorite author? <input type="text" name="author"><br>
+
+  Favorite object? <input type="text" name="noun"><br>
+
+  Enter an abjective that describes your author. <input type="text" name="adjective"><br>
+  <input type="submit" value="Submit"/> <br>
+</form>
+
+</body>
+</html>
