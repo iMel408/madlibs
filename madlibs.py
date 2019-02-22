@@ -63,8 +63,17 @@ def show_madlib():
     author = request.args.get('author')
     adjective = request.args.get('adjective')
 
+    # print(request.args.get('food'))
+
+    if request.args.get('food') == 'pizza':
+        food = 'pizza'
+    elif request.args.get('food') == 'sushi':
+        food = 'sushi'
+    else:
+        food = 'burrito'
+
     return render_template("madlib.html",
-        person = person, color=color, noun=noun, author=author, adjective=adjective)
+        color=color, noun=noun, author=author, adjective=adjective, food=food)
 
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
